@@ -11,6 +11,8 @@ module org.example.javax1 {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens org.example.javax1 to javafx.fxml;
-    exports org.example.javax1;
+    opens application to javafx.fxml;
+    exports application;
+    exports Controllers;
+    opens Controllers to javafx.fxml;
 }
